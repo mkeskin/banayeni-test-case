@@ -1,0 +1,27 @@
+.button {
+  @apply inline-flex items-center font-medium rounded-md border border-gray-300 bg-white text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none;
+}
+
+.button.round {
+  @apply rounded-full;
+}
+
+.button[data-size='xs'] {
+  @apply rounded px-2.5 py-1.5 text-xs;
+}
+
+.button[data-size='sm'] {
+  @apply px-3 py-2 text-sm leading-4;
+}
+
+.button[data-size='md'] {
+  @apply px-4 py-2 text-sm;
+}
+
+.button[data-size='lg'] {
+  @apply px-4 py-2 text-base;
+}
+
+.button[data-size='xl'] {
+  @apply px-6 py-3 text-base;
+}
