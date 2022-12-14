@@ -4,6 +4,8 @@ This app was created with [Next.js 13](https://nextjs.org/blog/next-13) and [Tai
 
 [Zustand](https://github.com/pmndrs/zustand) is used for data state management. The reason why this is preferred is to separate the data layer. Store files are in the `./src/store` directory. On the other hand, [axios](https://github.com/axios/axios) is used to fetch data as micro-based service via API endpoints.
 
+**NOTE:** _The html interface has a responsive design. You can preview the mobile design by [simulating the mobile view](https://developer.chrome.com/docs/devtools/device-mode)._
+
 ## Developing
 
 After the node packages are installed, run the development server:
