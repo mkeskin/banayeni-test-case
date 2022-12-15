@@ -17,6 +17,7 @@ import ItemDescription from '@components/ItemDescription'
 import ItemPrice from '@components/ItemPrice'
 
 import useItemStore from '@store/item'
+import { truncate } from '@utils/string'
 
 const breadcrumbs = [
   {
@@ -49,7 +50,7 @@ export default function ItemPage() {
 
   useEffect(() => {
     getItem(1).then(({ itemName }) => {
-      document.title = itemName
+      document.title = truncate(itemName)
     })
   }, [])
 
