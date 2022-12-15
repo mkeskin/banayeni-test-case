@@ -16,6 +16,8 @@ const Breadcrumb = forwardRef<HTMLDivElement, BreadcrumbProps>((props, ref) => {
     const scrollable = scrollableRef.current
 
     setTimeout(() => {
+      // Slide the scroll to end of content for
+      // showing last breadcrumb item on mobile screens
       if (scrollable) scrollable.scrollLeft = scrollable.scrollWidth
     }, 200)
   }, [])
