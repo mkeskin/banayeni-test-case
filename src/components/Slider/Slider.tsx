@@ -52,7 +52,7 @@ const Slider = (props: SliderProps) => {
           </div>
         ))}
       </div>
-      <div className="flex space-x-2 absolute left-1/2 -translate-x-1/2 bottom-4">
+      <div className="flex space-x-2 absolute left-1/2 -translate-x-1/2 bottom-2 rounded-full py-1 px-1.5 bg-black/10">
         {[...Array(items.length)].map((_, i) => (
           <span
             className={cx('block w-2 h-2 bg-gray-200/50 rounded-full', {
